@@ -8,14 +8,11 @@ class CartPoleRL(nn.Module):
         super().__init__()
 
         self.layers = nn.Sequential(
-            nn.Linear(in_features=input_size,
-                      out_features=hidden_size),
-            nn.ReLU,
-            nn.Linear(in_features=hidden_size,
-                      out_features=hidden_size),
-            nn.ReLU,
-            nn.Linear(in_features=hidden_size,
-                      out_features=output_size)
+            nn.Linear(input_size, hidden_size),
+            nn.ReLU(),
+            nn.Linear(hidden_size, hidden_size),
+            nn.ReLU(),
+            nn.Linear(hidden_size, output_size)
         )
 
     def forward(self, x):

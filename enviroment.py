@@ -7,6 +7,8 @@ while True:
     
     obs, reward, terminated, truncated, _ = env.step(env.action_space.sample())
     done = terminated or truncated
+    print(env.step(env.action_space.sample()))
+    exit()
 
     if done:
         done = False
