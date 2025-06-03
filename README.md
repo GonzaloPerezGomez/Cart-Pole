@@ -1,37 +1,38 @@
 # Cart-Pole
 
 ```bash
-cartpole-rl/
-│
-├── agent/                     # Código del agente RL
-│   ├── model.py               # Red neuronal (por ejemplo, una MLP)
-│   ├── dqn_agent.py           # Agente DQN u otra variante
-│   └── replay_buffer.py       # Memoria de experiencias
-│
-├── train/                     # Entrenamiento y evaluación
-│   ├── train.py               # Script de entrenamiento
-│   ├── evaluate.py            # Script para evaluar el agente
-│   └── plot_results.py        # Script para visualizar recompensas, etc.
-│
-├── tests/                     # Pruebas unitarias
-│   ├── test_agent.py
-│   ├── test_model.py
-│   └── test_env.py
-│
-├── notebooks/                 # Notebooks para pruebas y visualización
-│   └── cartpole_analysis.ipynb
-│
-├── config/                    # Configuraciones en YAML o JSON
-│   └── dqn_config.yaml
-│
-├── logs/                      # Registros de entrenamiento, tensorboard, etc.
-│   └── tensorboard/
-│
-├── saved_models/              # Modelos entrenados
-│   └── dqn_cartpole.pth
-│
-├── requirements.txt           # Dependencias del proyecto
-├── README.md                  # Descripción general del proyecto
-└── .gitignore                 # Ignorar carpetas como logs, modelos, etc.
-
+Cart-Pole/
+├── agent/
+│   ├── __init__.py
+│   ├── model.py
+│   └── replay_buffer.py
+├── env-backup/
+│   └── conda-env.yaml
+├── graphics/
+│   └── graphic.png
+├── models/
+│   └── dqn_model.pth
+├── tests/
+│   ├── __init__.py
+│   └── test_agent.py
+├── train/
+│   ├── __init__.py
+│   ├── plot_results.py
+│   └── train.py
+├── main.py
+├── README.md
+└── .gitignore
 ```
+
+## Requisitos
+
+- Python 3.8+
+- OpenAI Gym
+- NumPy
+- PyTorch
+
+Instalación del entorno con Conda:
+
+```bash
+conda env create -f env/conda-env.yaml
+conda activate cart-pole

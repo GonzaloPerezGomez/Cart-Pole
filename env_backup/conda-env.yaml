@@ -1,4 +1,4 @@
-name: lunar-lander
+name: cart-pole
 channels:
   - conda-forge
   - defaults
