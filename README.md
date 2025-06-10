@@ -27,7 +27,7 @@ Cart-Pole/
 ## Requisitos
 
 - Python 3.8+
-- OpenAI Gym
+- Gymnasium
 - NumPy
 - PyTorch
 
